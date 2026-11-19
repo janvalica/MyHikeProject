@@ -1,0 +1,255 @@
+
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Galerie | MyHike</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGACE -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+
+            <a class="navbar-brand fw-bold" href="index.html">🏔 MyHike</a>
+
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#menu"
+                aria-controls="menu" aria-expanded="false"
+                aria-label="Otevřít navigaci">
+
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Domů</a></li>
+                    <li class="nav-item"><a class="nav-link" href="vylety.html">Moje výlety</a></li>
+                    <li class="nav-item"><a class="nav-link" href="plany.html">Plánované výlety</a></li>
+                    <li class="nav-item"><a class="nav-link" href="trasy.html">Trasy</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="galerie.html">Galerie</a></li>
+                    <li class="nav-item"><a class="nav-link" href="kontakt.html">O mně</a></li>
+                </ul>
+
+                <a href="plany.html" class="btn btn-success ms-lg-3">
+                    Naplánovat výlet →
+                </a>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- HLAVIČKA -->
+    <header class="subpage-header">
+        <div class="container">
+
+            <p class="hero-label">VZPOMÍNKY Z HOR</p>
+
+            <h1>Fotogalerie</h1>
+
+            <p>
+                Fotografie z horských výletů,
+                krásných míst a nezapomenutelných výhledů.
+            </p>
+
+        </div>
+    </header>
+
+
+    <!-- DROBEČKOVÁ NAVIGACE -->
+    <div class="container mt-4">
+
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+
+                <li class="breadcrumb-item">
+                    <a href="index.html">Domů</a>
+                </li>
+
+                <li class="breadcrumb-item active" aria-current="page">
+                    Galerie
+                </li>
+
+            </ol>
+        </nav>
+
+    </div>
+
+
+    <!-- GALERIE -->
+    <main class="container py-4">
+
+        <div class="section-heading mb-4">
+            <h2>Moje horské fotografie</h2>
+            <p>Kliknutím na fotografii zobrazíš její větší verzi.</p>
+        </div>
+
+
+        <div class="row g-4">
+
+            <!-- FOTO 1 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <button class="gallery-button"
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#photoModal"
+                    data-photo="images/uvod1.jpg"
+                    data-title="Vysoké Tatry"
+                    data-description="Horské panorama Vysokých Tater.">
+
+                    <img src="images/uvod1.jpg"
+                        class="gallery-image"
+                        alt="Vysoké Tatry">
+
+                </button>
+                <h3 class="gallery-caption">Vysoké Tatry</h3>
+            </div>
+
+
+            <!-- FOTO 2 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <button class="gallery-button"
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#photoModal"
+                    data-photo="images/uvod2.jpg"
+                    data-title="Beskydy"
+                    data-description="Krásná krajina Moravskoslezských Beskyd.">
+
+                    <img src="images/uvod2.jpg"
+                        class="gallery-image"
+                        alt="Beskydy">
+
+                </button>
+                <h3 class="gallery-caption">Beskydy</h3>
+            </div>
+
+
+            <!-- FOTO 3 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <button class="gallery-button"
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#photoModal"
+                    data-photo="images/uvod3.jpg"
+                    data-title="Alpská jezera"
+                    data-description="Horské jezero obklopené alpskými vrcholy.">
+
+                    <img src="images/uvod3.jpg"
+                        class="gallery-image"
+                        alt="Alpské jezero">
+
+                </button>
+                <h3 class="gallery-caption">Alpská jezera</h3>
+            </div>
+
+
+            <!-- FOTO 4 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <button class="gallery-button"
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#photoModal"
+                    data-photo="images/uvod4.jpg"
+                    data-title="Grossglockner"
+                    data-description="Horská krajina v okolí Grossglockneru.">
+
+                    <img src="images/uvod4.jpg"
+                        class="gallery-image"
+                        alt="Grossglockner">
+
+                </button>
+                <h3 class="gallery-caption">Grossglockner</h3>
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- MODÁLNÍ OKNO -->
+    <div class="modal fade" id="photoModal" tabindex="-1"
+        aria-labelledby="photoModalTitle" aria-hidden="true">
+
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h2 class="modal-title fs-5" id="photoModalTitle">
+                        Fotografie
+                    </h2>
+
+                    <button type="button" class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Zavřít">
+                    </button>
+                </div>
+
+                <div class="modal-body">
+
+                    <img id="modalPhoto"
+                        src=""
+                        class="modal-photo"
+                        alt="Zvětšená fotografie">
+
+                    <p id="modalDescription" class="mt-3 mb-0"></p>
+
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success"
+                        data-bs-dismiss="modal">
+                        Zavřít
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- PATIČKA -->
+    <footer class="text-center py-4 mt-5">
+        <p class="mb-0">© 2026 MyHike | Můj turistický deník</p>
+    </footer>
+
+
+    <!-- BOOTSTRAP JAVASCRIPT -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- FUNKCE GALERIE -->
+    <script>
+        const photoModal = document.getElementById('photoModal');
+
+        photoModal.addEventListener('show.bs.modal', function (event) {
+
+            const button = event.relatedTarget;
+
+            const photo = button.getAttribute('data-photo');
+            const title = button.getAttribute('data-title');
+            const description = button.getAttribute('data-description');
+
+            document.getElementById('modalPhoto').src = photo;
+            document.getElementById('modalPhoto').alt = title;
+            document.getElementById('photoModalTitle').textContent = title;
+            document.getElementById('modalDescription').textContent = description;
+
+        });
+    </script>
+
+</body>
+</html>

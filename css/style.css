@@ -1,0 +1,522 @@
+
+/* ========================================
+   MYHIKE - HLAVNÍ STYLY WEBU
+   ======================================== */
+
+
+/* ZÁKLADNÍ NASTAVENÍ */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f3;
+    color: #183328;
+}
+
+
+/* ========================================
+   NAVIGACE
+   ======================================== */
+
+.navbar {
+    position: relative;
+    background-color: #1b2b38;
+    padding: 18px 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar-brand {
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.nav-link {
+    margin: 0 6px;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #a8e58a !important;
+}
+
+.nav-link.active {
+    color: #a8e58a !important;
+}
+
+
+/* ========================================
+   ÚVODNÍ CAROUSEL
+   ======================================== */
+
+#heroCarousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+#heroCarousel .carousel-inner {
+    width: 100%;
+}
+
+#heroCarousel .carousel-item {
+    height: 720px;
+    background-color: transparent;
+}
+
+#heroCarousel .carousel-item img {
+    display: block;
+    width: 100%;
+    height: 720px;
+    object-fit: cover;
+}
+
+.hero-image {
+    display: block;
+    width: 100%;
+    height: 720px;
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(55%);
+}
+
+
+/* TEXT PŘES FOTOGRAFIE */
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    color: white;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.hero-overlay .container {
+    padding-top: 80px;
+}
+
+.hero-label {
+    letter-spacing: 4px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #a8e58a;
+}
+
+.hero-overlay h1 {
+    font-size: clamp(42px, 6vw, 76px);
+    font-weight: bold;
+    line-height: 1.1;
+    margin: 25px 0;
+}
+
+.hero-overlay h1 span {
+    color: #a8e58a;
+}
+
+.hero-text {
+    max-width: 470px;
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.hero-overlay a {
+    pointer-events: auto;
+}
+
+
+/* OVLÁDÁNÍ CAROUSELU */
+
+#heroCarousel .carousel-indicators {
+    z-index: 4;
+}
+
+#heroCarousel .carousel-control-prev,
+#heroCarousel .carousel-control-next {
+    z-index: 4;
+    width: 8%;
+}
+
+
+/* ========================================
+   TLAČÍTKA
+   ======================================== */
+
+.btn-success {
+    background-color: #315d40;
+    border-color: #315d40;
+}
+
+.btn-success:hover {
+    background-color: #244832;
+    border-color: #244832;
+}
+
+
+/* ========================================
+   STATISTIKY
+   ======================================== */
+
+.statistics {
+    background-color: #ffffff;
+    padding: 50px 0;
+}
+
+.statistics h2 {
+    color: #315d40;
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.statistics p {
+    color: #65716a;
+    font-size: 16px;
+}
+
+
+/* ========================================
+   PATIČKA
+   ======================================== */
+
+footer {
+    background-color: #102432;
+    color: white;
+}
+
+
+/* ========================================
+   RESPONZIVNÍ ZOBRAZENÍ
+   ======================================== */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        padding: 12px 0;
+    }
+
+    #heroCarousel .carousel-item {
+        height: 650px;
+    }
+
+    .hero-image {
+        height: 650px;
+    }
+
+    .hero-overlay .container {
+        padding-top: 100px;
+    }
+
+    .hero-overlay h1 {
+        font-size: 42px;
+    }
+
+    .hero-text {
+        font-size: 16px;
+        max-width: 90%;
+    }
+
+    .statistics h2 {
+        font-size: 32px;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    #heroCarousel .carousel-item {
+        height: 600px;
+    }
+
+    .hero-image {
+        height: 600px;
+    }
+
+    .hero-overlay h1 {
+        font-size: 36px;
+    }
+
+    .hero-label {
+        font-size: 11px;
+        letter-spacing: 2px;
+    }
+
+}
+
+/* ========================================
+   STRÁNKA MOJE VÝLETY
+   ======================================== */
+
+.subpage-header {
+    background: linear-gradient(
+        rgba(10, 30, 25, 0.85),
+        rgba(10, 30, 25, 0.85)
+    ),
+    url("../images/uvod1.jpg") center/cover;
+
+    color: white;
+    padding: 150px 0 70px;
+}
+
+.subpage-header h1 {
+    font-size: clamp(38px, 5vw, 60px);
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.subpage-header p:not(.hero-label) {
+    max-width: 600px;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.breadcrumb a {
+    color: #315d40;
+    text-decoration: none;
+}
+
+.section-heading h2 {
+    color: #183328;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.section-heading p {
+    color: #65716a;
+}
+
+.hike-card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.hike-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.14);
+}
+
+.hike-card .card-img-top {
+    height: 230px;
+    object-fit: cover;
+}
+
+.hike-card .card-title {
+    color: #183328;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.hike-card .card-text {
+    color: #65716a;
+    line-height: 1.6;
+}
+
+.hike-detail {
+    color: #315d40;
+    font-size: 14px;
+}
+
+/* ========================================
+   TABULKA TURISTICKÝCH TRAS
+   ======================================== */
+
+#trasyTable {
+    font-size: 14px;
+}
+
+#trasyTable thead th {
+    background-color: #1b2b38;
+    color: white;
+    padding: 14px 10px;
+    white-space: nowrap;
+}
+
+#trasyTable tbody td {
+    padding: 12px 10px;
+}
+
+.dataTables_wrapper {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.dataTables_wrapper .form-control,
+.dataTables_wrapper .form-select {
+    border-radius: 6px;
+    border: 1px solid #ced4da;
+}
+
+.dataTables_wrapper .page-link {
+    color: #315d40;
+}
+
+
+.dataTables_wrapper .page-item.active .page-link {
+    background-color: transparent;
+    border-color: #315d40;
+    color: #315d40;
+    font-weight: bold;
+}
+
+/* ========================================
+   FOTOGALERIE
+   ======================================== */
+
+.gallery-button {
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: none;
+    background: transparent;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.gallery-image {
+    display: block;
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    transition: transform 0.4s, filter 0.4s;
+}
+
+.gallery-button:hover .gallery-image {
+    transform: scale(1.05);
+    filter: brightness(80%);
+}
+
+.gallery-caption {
+    margin-top: 12px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #183328;
+}
+
+.modal-photo {
+    display: block;
+    width: 100%;
+    max-height: 65vh;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+/* ========================================
+   STRÁNKA O MNĚ A KONTAKT
+   ======================================== */
+
+.about-section {
+    max-width: 850px;
+}
+
+.about-section p {
+    color: #65716a;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.contact-section {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.07);
+}
+
+.contact-form .form-label {
+    font-weight: 600;
+    color: #183328;
+}
+
+.contact-form .form-control,
+.contact-form .form-select {
+    padding: 11px 12px;
+    border-color: #d5ddd7;
+}
+
+.contact-form .form-control:focus,
+.contact-form .form-select:focus {
+    border-color: #315d40;
+    box-shadow: 0 0 0 0.2rem rgba(49, 93, 64, 0.15);
+}
+
+.contact-form .form-check-input:checked {
+    background-color: #315d40;
+    border-color: #315d40;
+}
+
+@media (max-width: 576px) {
+    .contact-section {
+        padding: 20px 15px;
+    }
+}
+
+/* ========================================
+   PŘEPÍNACÍ ZÁLOŽKY
+   ======================================== */
+
+.tabs-section {
+    max-width: 1140px;
+}
+
+.hike-tab-content {
+    background-color: white;
+    border: 1px solid #dee2e6;
+    border-top: none;
+    padding: 30px;
+    border-radius: 0 0 10px 10px;
+    min-height: 250px;
+}
+
+.hike-tab-content h3 {
+    color: #183328;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.hike-tab-content p,
+.hike-tab-content li {
+    color: #65716a;
+    line-height: 1.8;
+}
+
+.hike-tab-content ul {
+    padding-left: 22px;
+    margin-bottom: 22px;
+}
+
+#myHikeTabs .nav-link {
+    color: #315d40;
+}
+
+#myHikeTabs .nav-link.active {
+    color: #183328;
+    font-weight: bold;
+    border-color: #dee2e6 #dee2e6 white;
+}
+
+@media (max-width: 576px) {
+
+    .hike-tab-content {
+        padding: 20px 15px;
+    }
+
+    #myHikeTabs .nav-link {
+        padding: 10px 8px;
+        font-size: 13px;
+    }
+
+}
