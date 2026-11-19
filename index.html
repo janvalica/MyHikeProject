@@ -6,9 +6,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>MyHike | Můj turistický deník</title>
+    <title>MyHikingDiary | Můj turistický deník</title>
 
-    <!-- Bootstrap CSS -->
+    <!-- Font Manrope -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- Bootstrap CSS -->
     <link
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
         rel="stylesheet">
@@ -20,11 +25,11 @@
 <body>
 
     <!-- NAVIGACE -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
         <div class="container">
 
             <a class="navbar-brand fw-bold" href="index.html">
-                🏔 MyHike
+                🏔 MyHikingDiary
             </a>
 
             <button
@@ -157,23 +162,23 @@
             <div class="container">
 
                 <p class="hero-label">
-                    OBJEVUJ • CESTUJ • POZNÁVEJ
+                    TURISTICKÝ DENÍK
                 </p>
 
                 <h1>
-                    Moje další<br>
-                    <span>dobrodružství</span> čeká.
+                    Každá cesta<br>
+                    <span>má svůj příběh.</span>
                 </h1>
 
                 <p class="hero-text">
-                    Osobní turistický deník plný výletů,
-                    horských dobrodružství a míst,
-                    která chci jednou navštívit.
+                    Zaznamenávám výlety, objevuji nové trasy
+                    a plánuji další dobrodružství v horách.
                 </p>
 
-                <a href="vylety.html" class="btn btn-success btn-lg">
-                    Moje výlety →
-                </a>
+                <div class="hero-actions">
+                    <a href="vylety.html" class="btn btn-success btn-lg">Prozkoumat výlety</a>
+                    <a href="plany.html" class="btn btn-outline-light btn-lg">Plánované výpravy</a>
+                </div>
 
             </div>
 
@@ -211,32 +216,68 @@
 
 
     <!-- STATISTIKY -->
-    <section class="statistics py-5">
-
-        <div class="container">
-
-            <div class="row text-center g-4">
-
-                <div class="col-12 col-md-4">
-                    <h2>12</h2>
-                    <p>Absolvovaných výletů</p>
-                </div>
-
-                <div class="col-12 col-md-4">
-                    <h2>85 km</h2>
-                    <p>Nachozených kilometrů</p>
-                </div>
-
-                <div class="col-12 col-md-4">
-                    <h2>8</h2>
-                    <p>Vysněných destinací</p>
-                </div>
-
+    
+    <!-- OBLÍBENÉ VÝLETY -->
+    <section class="featured-section container">
+        <div class="section-heading featured-heading">
+            <div>
+                <p class="eyebrow">INSPIRACE NA CESTY</p>
+                <h2>Oblíbené výlety</h2>
             </div>
+            <a href="vylety.html" class="btn btn-outline-success">Zobrazit všechny výlety →</a>
+        </div>
+        <div class="row g-4">
+            <div class="col-12 col-md-4">
+                <a href="vylety.html" class="featured-card">
+                    <img src="images/uvod1.jpg" alt="Horská krajina ve Vysokých Tatrách">
+                    <span class="featured-card-shade"></span>
+                    <span class="featured-card-caption"><strong>Vysoké Tatry</strong><small>Horské štíty a plesa</small></span>
+                </a>
+            </div>
+            <div class="col-12 col-md-4">
+                <a href="vylety.html" class="featured-card">
+                    <img src="images/uvod2.jpg" alt="Horská krajina Beskyd">
+                    <span class="featured-card-shade"></span>
+                    <span class="featured-card-caption"><strong>Beskydy</strong><small>Lesní stezky a výhledy</small></span>
+                </a>
+            </div>
+            <div class="col-12 col-md-4">
+                <a href="vylety.html" class="featured-card">
+                    <img src="images/uvod3.jpg" alt="Alpské jezero obklopené horami">
+                    <span class="featured-card-shade"></span>
+                    <span class="featured-card-caption"><strong>Alpy</strong><small>Výpravy za obzorem</small></span>
+                </a>
+            </div>
+        </div>
+    </section>
 
+
+<section class="stats-section container">
+    <div class="row g-4 text-center">
+
+        <div class="col-md-4">
+            <div class="stat-card">
+                <h3>12</h3>
+                <p>Absolvovaných výletů</p>
+            </div>
         </div>
 
-    </section>
+        <div class="col-md-4">
+            <div class="stat-card">
+                <h3>85 km</h3>
+                <p>Nachozených kilometrů</p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="stat-card">
+                <h3>8</h3>
+                <p>Vysněných destinací</p>
+            </div>
+        </div>
+
+    </div>
+</section>
 
 <!-- PŘEPÍNACÍ ZÁLOŽKY -->
 <section class="container tabs-section py-5">
@@ -381,7 +422,7 @@
     <footer class="text-center py-4">
 
         <p class="mb-0">
-            © 2026 MyHike | Můj turistický deník
+            © 2026 MyHikingDiary | Můj turistický deník
         </p>
 
     </footer>
