@@ -26,61 +26,23 @@
 
     <!-- NAVIGACE -->
     <nav class="navbar navbar-expand-lg navbar-light sticky-top">
-        <div class="container">
-
-            <a class="navbar-brand fw-bold" href="index.html">
-                🏔 MyHikingDiary
-            </a>
-
-            <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#menu"
-                aria-controls="menu"
-                aria-expanded="false"
-                aria-label="Otevřít navigaci">
-
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="menu">
-
-                <ul class="navbar-nav ms-auto">
-
-                    <li class="nav-item">
-                        <a class="nav-link active" href="index.html">Domů</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="vylety.html">Moje výlety</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="plany.html">Plánované výlety</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="trasy.html">Trasy</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="galerie.html">Galerie</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="kontakt.html">O mně</a>
-                    </li>
-
-                </ul>
-
-                <a href="plany.html" class="btn btn-success ms-lg-3">
-                    Naplánovat výlet →
-                </a>
-
-            </div>
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">🏔 MyHikingDiary</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Otevřít navigaci">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto"><li class="nav-item"><a class="nav-link active" href="index.html">Domů</a></li>
+<li class="nav-item"><a class="nav-link" href="vylety.html">Moje výlety</a></li>
+<li class="nav-item"><a class="nav-link" href="plany.html">Plánované výlety</a></li>
+<li class="nav-item"><a class="nav-link" href="trasy.html">Trasy</a></li>
+<li class="nav-item"><a class="nav-link" href="galerie.html">Galerie</a></li>
+<li class="nav-item"><a class="nav-link" href="omne.html">O mně</a></li>
+<li class="nav-item"><a class="nav-link" href="kontakt.html">Napiš mi</a></li>
+</ul>
         </div>
-    </nav>
+    </div>
+</nav>
 
 
     <!-- ÚVODNÍ BOOTSTRAP CAROUSEL -->
@@ -166,8 +128,8 @@
                 </p>
 
                 <h1>
-                    Každá cesta<br>
-                    <span>má svůj příběh.</span>
+                    Abych nezapomněl,<br>
+                    <span>kde jsem všude byl.</span>
                 </h1>
 
                 <p class="hero-text">
@@ -217,67 +179,70 @@
 
     <!-- STATISTIKY -->
     
-    <!-- OBLÍBENÉ VÝLETY -->
+    <!-- ABSOLVOVANÉ VÝLETY -->
     <section class="featured-section container">
         <div class="section-heading featured-heading">
             <div>
-                <p class="eyebrow">INSPIRACE NA CESTY</p>
+                <p class="eyebrow">MOJE HORSKÉ ZÁŽITKY</p>
                 <h2>Oblíbené výlety</h2>
             </div>
             <a href="vylety.html" class="btn btn-outline-success">Zobrazit všechny výlety →</a>
         </div>
         <div class="row g-4">
-            <div class="col-12 col-md-4">
-                <a href="vylety.html" class="featured-card">
-                    <img src="images/uvod1.jpg" alt="Horská krajina ve Vysokých Tatrách">
+            <div class="col-12 col-sm-6 col-xl-3">
+                <a href="vylety.html" class="featured-card" data-completed-hike data-distance="24" data-ascent="1410">
+                    <img src="images/rysy1.JPEG" alt="Výhledy z výstupu na Rysy">
                     <span class="featured-card-shade"></span>
-                    <span class="featured-card-caption"><strong>Vysoké Tatry</strong><small>Horské štíty a plesa</small></span>
+                    <span class="featured-card-caption"><strong>Výstup na Rysy</strong><small>Vysoké Tatry · 24 km · +1 410 m</small></span>
                 </a>
             </div>
-            <div class="col-12 col-md-4">
-                <a href="vylety.html" class="featured-card">
-                    <img src="images/uvod2.jpg" alt="Horská krajina Beskyd">
+            <div class="col-12 col-sm-6 col-xl-3">
+                <a href="vylety.html" class="featured-card" data-completed-hike data-distance="16" data-ascent="1319">
+                    <img src="images/fatra1.JPEG" alt="Horská krajina Malé Fatry">
                     <span class="featured-card-shade"></span>
-                    <span class="featured-card-caption"><strong>Beskydy</strong><small>Lesní stezky a výhledy</small></span>
+                    <span class="featured-card-caption"><strong>Oba Rozsutce</strong><small>Malá Fatra · 16 km · +1 319 m</small></span>
                 </a>
             </div>
-            <div class="col-12 col-md-4">
-                <a href="vylety.html" class="featured-card">
-                    <img src="images/uvod3.jpg" alt="Alpské jezero obklopené horami">
+            <div class="col-12 col-sm-6 col-xl-3">
+                <a href="vylety.html" class="featured-card" data-completed-hike data-distance="27" data-ascent="2340">
+                    <img src="images/perc1.JPEG" alt="Hřebenová trasa Orla Perć">
                     <span class="featured-card-shade"></span>
-                    <span class="featured-card-caption"><strong>Alpy</strong><small>Výpravy za obzorem</small></span>
+                    <span class="featured-card-caption"><strong>Orla Perć</strong><small>Vysoké Tatry · 27 km · +2 340 m</small></span>
+                </a>
+            </div>
+            <div class="col-12 col-sm-6 col-xl-3">
+                <a href="vylety.html" class="featured-card" data-completed-hike data-distance="21.5" data-ascent="1892">
+                    <img src="images/zapadni1.JPEG" alt="Hřeben Západních Tater">
+                    <span class="featured-card-shade"></span>
+                    <span class="featured-card-caption"><strong>Baranec až Baníkov</strong><small>Západní Tatry · 21,5 km · +1 892 m</small></span>
                 </a>
             </div>
         </div>
     </section>
 
-
-<section class="stats-section container">
-    <div class="row g-4 text-center">
-
-        <div class="col-md-4">
-            <div class="stat-card">
-                <h3>12</h3>
-                <p>Absolvovaných výletů</p>
+    <!-- STATISTIKY SE POČÍTAJÍ Z ABSOLVOVANÝCH VÝLETŮ VÝŠE -->
+    <section class="stats-section container">
+        <div class="row g-4 text-center">
+            <div class="col-md-4">
+                <div class="stat-card">
+                    <h3 id="completedHikesCount">4</h3>
+                    <p>Absolvovaných výletů</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="stat-card">
+                    <h3 id="completedHikesDistance">88,5 km</h3>
+                    <p>Nachozených kilometrů</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="stat-card">
+                    <h3 id="completedHikesAscent">6 961 m</h3>
+                    <p>Celkové nastoupané metry</p>
+                </div>
             </div>
         </div>
-
-        <div class="col-md-4">
-            <div class="stat-card">
-                <h3>85 km</h3>
-                <p>Nachozených kilometrů</p>
-            </div>
-        </div>
-
-        <div class="col-md-4">
-            <div class="stat-card">
-                <h3>8</h3>
-                <p>Vysněných destinací</p>
-            </div>
-        </div>
-
-    </div>
-</section>
+    </section>
 
 <!-- PŘEPÍNACÍ ZÁLOŽKY -->
 <section class="container tabs-section py-5">
@@ -345,14 +310,14 @@
             <h3>Kam se chci vydat?</h3>
 
             <p>
-                Každý výlet začíná snem o novém místě.
-                Mezi moje další turistické cíle patří:
+                Moje horské cíle se postupně posouvají dál.
+                Nejdřív bych chtěl poznat celé Tatry a potom se vydat za dalšími výzvami do Alp:
             </p>
 
             <ul>
-                <li>Výstup na Rysy ve Vysokých Tatrách</li>
-                <li>Prozkoumání okolí Grossglockneru</li>
-                <li>Vícedenní přechod rakouských Alp</li>
+                <li>Postupně projít celé Vysoké a Západní Tatry</li>
+                <li>Výstup na Grossglockner – nejvyšší horu Rakouska</li>
+                <li>Projít rakouské Alpy a jednou dojít až na Mont Blanc</li>
             </ul>
 
             <a href="plany.html" class="btn btn-success">
@@ -427,6 +392,21 @@
 
     </footer>
 
+
+
+    <script>
+        // Souhrn se automaticky počítá z karet označených jako absolvované výlety.
+        document.addEventListener('DOMContentLoaded', function () {
+            const hikes = Array.from(document.querySelectorAll('[data-completed-hike]'));
+            const totalDistance = hikes.reduce((sum, hike) => sum + Number(hike.dataset.distance || 0), 0);
+            const totalAscent = hikes.reduce((sum, hike) => sum + Number(hike.dataset.ascent || 0), 0);
+            const format = number => new Intl.NumberFormat('cs-CZ', { maximumFractionDigits: 1 }).format(number);
+
+            document.getElementById('completedHikesCount').textContent = hikes.length;
+            document.getElementById('completedHikesDistance').textContent = format(totalDistance) + ' km';
+            document.getElementById('completedHikesAscent').textContent = format(totalAscent) + ' m';
+        });
+    </script>
 
     <!-- Bootstrap JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

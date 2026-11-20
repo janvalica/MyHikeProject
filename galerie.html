@@ -23,36 +23,23 @@
 
     <!-- NAVIGACE -->
     <nav class="navbar navbar-expand-lg navbar-light sticky-top">
-        <div class="container">
-
-            <a class="navbar-brand fw-bold" href="index.html">🏔 MyHikingDiary</a>
-
-            <button class="navbar-toggler" type="button"
-                data-bs-toggle="collapse" data-bs-target="#menu"
-                aria-controls="menu" aria-expanded="false"
-                aria-label="Otevřít navigaci">
-
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="menu">
-
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Domů</a></li>
-                    <li class="nav-item"><a class="nav-link" href="vylety.html">Moje výlety</a></li>
-                    <li class="nav-item"><a class="nav-link" href="plany.html">Plánované výlety</a></li>
-                    <li class="nav-item"><a class="nav-link" href="trasy.html">Trasy</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="galerie.html">Galerie</a></li>
-                    <li class="nav-item"><a class="nav-link" href="kontakt.html">O mně</a></li>
-                </ul>
-
-                <a href="plany.html" class="btn btn-success ms-lg-3">
-                    Naplánovat výlet →
-                </a>
-
-            </div>
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">🏔 MyHikingDiary</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Otevřít navigaci">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto"><li class="nav-item"><a class="nav-link" href="index.html">Domů</a></li>
+<li class="nav-item"><a class="nav-link" href="vylety.html">Moje výlety</a></li>
+<li class="nav-item"><a class="nav-link" href="plany.html">Plánované výlety</a></li>
+<li class="nav-item"><a class="nav-link" href="trasy.html">Trasy</a></li>
+<li class="nav-item"><a class="nav-link active" href="galerie.html">Galerie</a></li>
+<li class="nav-item"><a class="nav-link" href="omne.html">O mně</a></li>
+<li class="nav-item"><a class="nav-link" href="kontakt.html">Napiš mi</a></li>
+</ul>
         </div>
-    </nav>
+    </div>
+</nav>
 
 
     <!-- HLAVIČKA -->
@@ -101,84 +88,96 @@
         </div>
 
 
-        <div class="row g-4">
-
-            <!-- FOTO 1 -->
-            <div class="col-12 col-sm-6 col-lg-4">
-                <button class="gallery-button"
-                    type="button"
-                    data-bs-toggle="modal"
-                    data-bs-target="#photoModal"
-                    data-photo="images/uvod1.jpg"
-                    data-title="Vysoké Tatry"
-                    data-description="Horské panorama Vysokých Tater.">
-
-                    <img src="images/uvod1.jpg"
-                        class="gallery-image"
-                        alt="Vysoké Tatry">
-
-                </button>
-                <h3 class="gallery-caption">Vysoké Tatry</h3>
+        <!-- RYSY -->
+        <section class="mb-5" aria-labelledby="galerie-rysy">
+            <div class="section-heading mb-3">
+                <h3 id="galerie-rysy">Rysy <span class="text-muted fs-6">· 18. července 2026</span></h3>
             </div>
-
-
-            <!-- FOTO 2 -->
-            <div class="col-12 col-sm-6 col-lg-4">
-                <button class="gallery-button"
-                    type="button"
-                    data-bs-toggle="modal"
-                    data-bs-target="#photoModal"
-                    data-photo="images/uvod2.jpg"
-                    data-title="Beskydy"
-                    data-description="Krásná krajina Moravskoslezských Beskyd.">
-
-                    <img src="images/uvod2.jpg"
-                        class="gallery-image"
-                        alt="Beskydy">
-
-                </button>
-                <h3 class="gallery-caption">Beskydy</h3>
+            <div class="row g-4">
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <button class="gallery-button" type="button" data-bs-toggle="modal" data-bs-target="#photoModal" data-photo="images/rysy1.JPEG">
+                        <img src="images/rysy1.JPEG" class="gallery-image" alt="Horská krajina při výstupu na Rysy" loading="lazy">
+                    </button>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <button class="gallery-button" type="button" data-bs-toggle="modal" data-bs-target="#photoModal" data-photo="images/rysy2.JPEG">
+                        <img src="images/rysy2.JPEG" class="gallery-image" alt="Výhledy z výletu na Rysy" loading="lazy">
+                    </button>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <button class="gallery-button" type="button" data-bs-toggle="modal" data-bs-target="#photoModal" data-photo="images/rysy3.JPEG">
+                        <img src="images/rysy3.JPEG" class="gallery-image" alt="Scenérie z výletu na Rysy" loading="lazy">
+                    </button>
+                </div>
             </div>
+        </section>
 
-
-            <!-- FOTO 3 -->
-            <div class="col-12 col-sm-6 col-lg-4">
-                <button class="gallery-button"
-                    type="button"
-                    data-bs-toggle="modal"
-                    data-bs-target="#photoModal"
-                    data-photo="images/uvod3.jpg"
-                    data-title="Alpská jezera"
-                    data-description="Horské jezero obklopené alpskými vrcholy.">
-
-                    <img src="images/uvod3.jpg"
-                        class="gallery-image"
-                        alt="Alpské jezero">
-
-                </button>
-                <h3 class="gallery-caption">Alpská jezera</h3>
+        <!-- MALÁ FATRA -->
+        <section class="mb-5" aria-labelledby="galerie-fatra">
+            <div class="section-heading mb-3">
+                <h3 id="galerie-fatra">Malá Fatra – oba Rozsutce <span class="text-muted fs-6">· 22. července 2026</span></h3>
             </div>
-
-
-            <!-- FOTO 4 -->
-            <div class="col-12 col-sm-6 col-lg-4">
-                <button class="gallery-button"
-                    type="button"
-                    data-bs-toggle="modal"
-                    data-bs-target="#photoModal"
-                    data-photo="images/uvod4.jpg"
-                    data-title="Grossglockner"
-                    data-description="Horská krajina v okolí Grossglockneru.">
-
-                    <img src="images/uvod4.jpg"
-                        class="gallery-image"
-                        alt="Grossglockner">
-
-                </button>
-                <h3 class="gallery-caption">Grossglockner</h3>
+            <div class="row g-4">
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <button class="gallery-button" type="button" data-bs-toggle="modal" data-bs-target="#photoModal" data-photo="images/fatra1.JPEG">
+                        <img src="images/fatra1.JPEG" class="gallery-image" alt="Malá Fatra – horská scenérie" loading="lazy">
+                    </button>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <button class="gallery-button" type="button" data-bs-toggle="modal" data-bs-target="#photoModal" data-photo="images/fatra2.JPEG">
+                        <img src="images/fatra2.JPEG" class="gallery-image" alt="Výhledy v Malé Fatře" loading="lazy">
+                    </button>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <button class="gallery-button" type="button" data-bs-toggle="modal" data-bs-target="#photoModal" data-photo="images/fatra3.JPEG">
+                        <img src="images/fatra3.JPEG" class="gallery-image" alt="Příroda Malé Fatry" loading="lazy">
+                    </button>
+                </div>
             </div>
+        </section>
 
-        </div>
+        <!-- ORLA PERC -->
+        <section class="mb-5" aria-labelledby="galerie-orla">
+            <div class="section-heading mb-3">
+                <h3 id="galerie-orla">Orla Perć <span class="text-muted fs-6">· 16. září 2026</span></h3>
+            </div>
+            <div class="row g-4">
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <button class="gallery-button" type="button" data-bs-toggle="modal" data-bs-target="#photoModal" data-photo="images/perc1.JPEG">
+                        <img src="images/perc1.JPEG" class="gallery-image" alt="Hřebenová trasa Orla Perć" loading="lazy">
+                    </button>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <button class="gallery-button" type="button" data-bs-toggle="modal" data-bs-target="#photoModal" data-photo="images/perc2.JPEG">
+                        <img src="images/perc2.JPEG" class="gallery-image" alt="Skalnaté štíty na Orla Perć" loading="lazy">
+                    </button>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <button class="gallery-button" type="button" data-bs-toggle="modal" data-bs-target="#photoModal" data-photo="images/perc3.JPEG">
+                        <img src="images/perc3.JPEG" class="gallery-image" alt="Výhled z trasy Orla Perć" loading="lazy">
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ZAPADNI TATRY -->
+        <section class="mb-2" aria-labelledby="galerie-zapadni">
+            <div class="section-heading mb-3">
+                <h3 id="galerie-zapadni">Západní Tatry – Baranec až Baníkov <span class="text-muted fs-6">· 28. září 2026</span></h3>
+            </div>
+            <div class="row g-4">
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <button class="gallery-button" type="button" data-bs-toggle="modal" data-bs-target="#photoModal" data-photo="images/zapadni1.JPEG">
+                        <img src="images/zapadni1.JPEG" class="gallery-image" alt="Hřeben Západních Tater" loading="lazy">
+                    </button>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <button class="gallery-button" type="button" data-bs-toggle="modal" data-bs-target="#photoModal" data-photo="images/zapadni2.png">
+                        <img src="images/zapadni2.png" class="gallery-image" alt="Zimní podmínky v Západních Tatrách" loading="lazy">
+                    </button>
+                </div>
+            </div>
+        </section>
 
     </main>
 
@@ -209,7 +208,6 @@
                         class="modal-photo"
                         alt="Zvětšená fotografie">
 
-                    <p id="modalDescription" class="mt-3 mb-0"></p>
 
                 </div>
 
@@ -245,13 +243,9 @@
             const button = event.relatedTarget;
 
             const photo = button.getAttribute('data-photo');
-            const title = button.getAttribute('data-title');
-            const description = button.getAttribute('data-description');
-
             document.getElementById('modalPhoto').src = photo;
-            document.getElementById('modalPhoto').alt = title;
-            document.getElementById('photoModalTitle').textContent = title;
-            document.getElementById('modalDescription').textContent = description;
+            document.getElementById('modalPhoto').alt = 'Zvětšená fotografie z horského výletu';
+            document.getElementById('photoModalTitle').textContent = 'Fotografie';
 
         });
     </script>
